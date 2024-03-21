@@ -182,8 +182,9 @@ To test third-party cookie deprecation with heuristics enabled:
    1. Check if the cookies are highlighted yellow (blocked) or not highlighted (not blocked).
 
 To turn off heuristics for testing other mitigations:
-   1. Launch Chrome with these command-line flags, as described in [these docs](https://developer.chrome.com/docs/web-platform/chrome-flags#command-line_flags):\
+   1. Launch Chrome with the command-line flags described in [these docs](https://developer.chrome.com/docs/web-platform/chrome-flags#command-line_flags):\
 `--enable-features="TpcdHeuristicsGrants:TpcdReadHeuristicsGrants/false/TpcdWritePopupCurrentInteractionHeuristicsGrants/0d/TpcdWriteRedirectHeuristicGrants/0m"`
+   1. Alternatively, set `chrome://settings#tpcd-heuristics-grants` to `Disabled`.
 
 To re-enable heuristics:\
 #tpcd-heuristics-grants (**Default**)\
